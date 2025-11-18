@@ -191,6 +191,159 @@ span{
     transform: scale(1.1);
 }
 
+/*  About
+ ======================================================*/
 
+ .about {
+    display: flex;
 
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--second-bg-color);
+    gap: 2rem;
+ }
 
+ .about .heading{
+    text-align: start;
+ }
+
+ .about-img img{
+    width: 30vw;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 0 2.5rem var(--main-color);
+    cursor: pointer;
+    transition: .4s ease;
+    animation: floatImage 4s ease-in-out infinite;
+ }
+
+ .about-img img:hover{
+    box-shadow: 0 0 2.5rem var(--main-color),
+                0 0 3.5rem var(--main-color),
+                0 0 4.5rem var(--main-color);
+ }
+
+ @keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+ }
+
+.about-content{
+    padding: 0 4rem;
+}
+
+.about-content h2{
+    line-height: 1.2;
+}
+
+.about-content h3{
+    font-size: 3rem;
+}
+
+.about-content p{
+    margin: 2rem 0 3rem;
+}
+
+/*  Skills
+ ======================================================*/
+
+ .skills h3{
+    display: inline-flex;
+    margin-bottom: 2rem;
+    border-bottom: .2rem solid var(--main-color);
+ }
+ 
+ .content-skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+ }
+
+ .item-skill spam,
+ .item-skill i{
+    display: block;
+    color: var(--text-color);
+    font-weight: 600;
+ }
+
+ .item-skill{
+    padding: 1rem;
+ }
+
+ .item-skill i{
+    font-size: 5rem;
+ }
+
+/*  Services
+ ======================================================*/
+
+.services h2{
+    margin-bottom: 2rem;
+}
+
+.services-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.services-item{
+    flex: 1 1 30rem;
+    background-color: var(--second-bg-color);
+    padding: 6rem 2rem 6rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 .5rem var(--main-color);
+    transition: all .5s ease;
+}
+
+.services-item:hover{
+    outline: .1rem solid var(--main-color);
+    cursor: pointer;
+    transform: translateY(-.5rem) scale(1.02);
+}
+
+.services-item i{
+    font-size: 6rem;
+    color: var(--main-color);
+}
+
+.services-item h3{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.services-item p{
+    margin: 1rem 0; 
+}
+
+.btn-now{
+    display: inline-block;
+    font-size: 2.2rem;
+    line-height:  1.2rem;
+    font-weight: 700;
+    padding: .7rem 0;
+    color: var(--text-color);
+    border-bottom: .2rem solid var(--other-color);
+}
+
+.btn-now i{
+    vertical-align: middle;
+    font-size: 2.5;
+    margin-left: .5rem;
+}
+
+.btn-now:hover{
+    border-bottom:.2rem solid var(--main-color) ;
+}
