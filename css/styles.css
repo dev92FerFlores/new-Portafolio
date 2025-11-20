@@ -347,3 +347,116 @@ span{
 .btn-now:hover{
     border-bottom:.2rem solid var(--main-color) ;
 }
+
+/*  Portafolio
+ ======================================================*/
+
+.portafolio{
+    background-color: var(--second-bg-color);
+}
+
+.portafolio-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.portafolio-item{
+    width: calc(94%/3);
+    background-color: var(--bg-color);
+    border: .1rem solid transparent;
+    padding: 2rem;
+    box-shadow: 0 0 .5rem var(--main-color);
+    transition: all .5s ease;
+}
+
+.portafolio-item:hover{
+    outline: .1rem solid var(--main-color);
+    cursor: pointer;
+    transform: translateY(-.5rem) scale(1.02);
+}
+
+.portafolio-item img{
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.portafolio-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.portafolio-header h4{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.portafolio-header a{
+    display: inline-flex;
+    font-size: 3.5rem;
+    border-radius: 50%;
+    padding: .5rem;
+    color: var(--text-color);
+    background-color:var(--main-color);
+    transition: .3s;
+}
+
+.portafolio-header a:hover{
+    color: white;
+    background-color: purple;
+}
+
+.portafolio-item p{
+    margin-bottom: 2rem;
+}
+
+/*  Contacto
+ ======================================================*/
+
+.contact{
+    background-color: var(--bg-color);
+}
+
+.contact-content{
+    display: flex;
+    gap: 6rem;
+    padding: 3rem 0;
+}
+
+.img-contact {
+    width: 50;
+}
+
+.img-contact img{
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2rem;
+    border: .2rem solid var(--main-color);
+    pad: 3rem;
+    transition: all .3s ease;
+}
+
+.contact form:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+form input,
+form textarea{
+    width: 100%s;
+}
+
