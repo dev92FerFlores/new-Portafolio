@@ -426,6 +426,7 @@ span{
 
 .contact{
     background-color: var(--bg-color);
+    text-align: center;
 }
 
 .contact-content{
@@ -435,18 +436,22 @@ span{
 }
 
 .img-contact {
-    width: 50;
+    width: 50%;
 }
 
 .img-contact img{
     width: 100%;
+}
+
+.contact-content form{
+    width: 50%;
     margin: 1rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 2rem;
     border: .2rem solid var(--main-color);
-    pad: 3rem;
+    padding: 3rem;
     transition: all .3s ease;
 }
 
@@ -457,6 +462,67 @@ span{
 
 form input,
 form textarea{
-    width: 100%s;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: var(--second-bg-color);
+    border-bottom: 0.25rem solid var(--main-color);
+    border-radius: 0.8rem 0.8rem 0 0;
+    margin: 0.7rem 0;
 }
 
+form textarea{
+    margin-bottom: 2rem;
+}
+
+.btn-submit{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-submit .btn{
+    width: auto;
+    cursor: pointer;
+}
+
+form input:focus,
+form textarea:focus{
+    outline: none;
+    box-shadow: 0 0.2rem 0.2rem -0.1rem var(--main-color);
+}
+
+/*  footer
+ ======================================================*/
+
+ .footer{
+    background-color: var(--second-bg-color);
+    padding: 40px 0;
+    text-align: center;
+    border-top: 0.2rem solid var(--main-color);
+ }
+
+ .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+
+ .arrow a {
+    display: inline-flex;
+    color: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    font-size: 3rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    transition: 0.3s ease;
+ }
+
+ .arrow a:hover{
+    box-shadow: 0 0 2.5rem var(--main-color);
+    transform: scale(1.1) translateY(-1rem);
+ }
+
+ .footer p{
+    color: var(--text-color);
+ }
